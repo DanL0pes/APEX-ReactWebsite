@@ -1,0 +1,24 @@
+.quem-somos{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-color: #aeddfc;
+}
+.quem-somos-container{
+    display: flex;
+    align-items: center;
+    padding-inline: 40px;
+}
+.quem-somos-container .quem-somos-card{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quem-somos-container .quem-somos-card img{
+    width: 80%;
+}
+.quem-somos-container .quem-somos-info{
+    flex: 1;
+    font-size: 1.5rem;
+}
