@@ -1,0 +1,40 @@
+.devs{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+
+.devs-container{
+    flex: 1;
+    display: flex;
+    background-color: rgb(173, 173, 173);
+}
+.carousel-container{
+    width: 100vw;
+}
+.devs-card{
+    user-select: none;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-inline: 24px;
+    overflow: hidden;
+    background-color: #FFF;
+    border-radius: 16px;
+}
+.devs-card #card-funcao{
+    font-weight: 500;
+    color: #999;
+    font-size: 1rem;
+}
+.devs-card img{
+    height: 162px;
+    border-radius: 50%;
+    width: 162px;
+    object-fit: cover;
+    object-position: top;
+}
