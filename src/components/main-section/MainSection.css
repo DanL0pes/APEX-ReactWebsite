@@ -3,7 +3,6 @@
     height: 100vh;
     display: flex;
     background-color: #FFF;
-    overflow: hidden;
 }
 .main-section-container{
     flex: 1;
@@ -12,40 +11,38 @@
     align-items: center;
     padding-inline: 60px;
 }
-.main-section-container .blob{
+/* .main-section-container .blob{
     position: absolute;
     width: 60%;
     top: 60%;
-    right: 0%;
+    left: 50%;
     z-index: 0;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
 }
 .main-section-container .blob.main{
     z-index: 1;
-}
+} */
 
-.main-section-container .main-img-right{
-    flex: 1;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-}
-.main-section-container .main-img-right img{
-    width: 100%;
-}
+
 .main-section-container .main-frase{
-    z-index: 2;
-    font-size: 4rem;
+    z-index: 3;
+    font-size: 2rem;
+    text-align: center;
+    align-items: center;
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-bottom: 40px;
 }
-.main-section-container .main-frase img{
-    width: 100%;
-    max-width: 300px;
+.main-section-container .main-frase p{
+  margin-top: 24px;
+  font-size: 1.5rem;
+  min-width: 845px;
+  max-width: 50%;
 }
+
 .main-section-container .main-frase span{
-    background: rgba(255, 255, 255, 0.21);
+    background: rgba(255, 2, 171, 0.21);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
@@ -55,60 +52,53 @@
     font-weight: 600;
     width: fit-content;
 }
-.type-animation {
-    --currentColor: currentcolor;
-  }
-  
-  .type-animation::before {
-    content: "";
-    animation: typing 20.5s infinite;
-  }
-  
-  .type-animation::after {
-    content: "";
-    border-right: 4px solid var(--currentColor);
-    animation: blink 1s linear infinite;
-  }
-
-@keyframes typing {
-    0.0000%, 27.3488% { content: ""; }
-    1.1395%, 26.2093% { content: "I"; }
-    2.2791%, 25.0698% { content: "In"; }
-    3.4186%, 23.9302% { content: "Ino"; }
-    4.5581%, 22.7907% { content: "Inov"; }
-    5.6977%, 21.6512% { content: "Inova"; }
-    6.8372%, 20.5116% { content: "Inovaç"; }
-    7.9767%, 19.3721% { content: "Inovaçã"; }
-    9.1163%, 18.2326% { content: "Inovação"; }
-  
-    30.7674%, 51.2791% { content: ""; }
-    31.9070%, 50.1395% { content: "E"; }
-    33.0465%, 49.0000% { content: "Ev"; }
-    34.1860%, 47.8605% { content: "Evo"; }
-    35.3256%, 46.7209% { content: "Evol"; }
-    36.4651%, 45.5814% { content: "Evolu"; }
-    37.6047%, 44.4419% { content: "Evoluç"; }
-    38.6047%, 43.4419% { content: "Evoluçã"; }
-    39.6047%, 42.4419% { content: "Evolução"; }
-  
-    54.6279%, 96.8605% { content: ""; }
-    55.7674%, 95.7209% { content: "A"; }
-    56.9070%, 94.5814% { content: "Ap"; }
-    57.0465%, 93.4419% { content: "Ape"; }
-    58.1860%, 92.3023% { content: "Apex"; }
-    59.3256%, 91.1628% { content: "Apex."; }
+.main-section-container .main-frase a{
+  width: fit-content;
+  border: 1px solid #DCDCDC;
+  border-radius: 4px;
+  padding: 6px 14px;
+  margin-top: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .3s ease-out;
 }
-@keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
+.main-section-container .main-frase a:hover{
+  color: #BD0BFF;
+  background-color: #EFEFEF;
+}
 
 
   .main-section-container .scrollUp{
     position: absolute;
     left: 50%;
-    bottom: 20px;
+    color: #FFF;
+    bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: bounceUp 1s infinite;
+    z-index: 10;
+    transition: .3s;
+  }
+  .main-section-container .scrollUp.scrolled{
+    opacity: 0;
+  }
+
+  @keyframes bounceUp {
+    from{
+        transform: translateY(20%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+  }
+
+  .main-section-container .wave{
+    position: absolute;
+    bottom: -120px;
+    left: 0;
+    z-index: 1;
+  }
+  .main-section-container .wave.behind{
+    z-index: 0;
   }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-scroll'
 import { HiOutlineMenuAlt2  } from "react-icons/hi";
 import { IoClose } from "react-icons/io5";
 import './Navbar.css';
@@ -36,27 +36,27 @@ function Navbar() {
                 </Link>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to='#quem-somos' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='quem-somos' className='nav-links' smooth={true} onClick={closeMobileMenu}>
                             Quem Somos
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='projetos' className='nav-links' smooth={true} onClick={closeMobileMenu}>
                             Projetos
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='devs' className='nav-links' smooth={true} onClick={closeMobileMenu}>
                             Desenvolvedores
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='contato' className='nav-links' smooth={true} onClick={closeMobileMenu}>
                             Contato
                         </Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                        <Link to='parceiros' className='nav-links' smooth={true} onClick={closeMobileMenu}>
                             Parceiros
                         </Link>
                     </li>

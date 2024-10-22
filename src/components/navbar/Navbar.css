@@ -28,16 +28,17 @@
 }
 .nav-menu{
     display: flex;
-    flex: 0.75;
-    max-width: 567px;
     justify-content: space-between;
+    flex: 0.4;
     flex-direction: row;
     list-style-type: none
 }
 .nav-links{
     color: #555;
+    width: fit-content;
     text-decoration: none;
     font-weight: 600;
+    cursor: pointer;
 }
 .nav-item:hover .nav-links{
     color: #000;
