@@ -8,17 +8,18 @@
     display: flex;
     flex: 1;
     padding-top: 140px;
+    padding-inline: 70px;
     align-items: center;
-    padding-inline: 120px;
+    gap: 20px;
 }
 .quem-somos-container .quem-somos-header{
   font-size: 1.5rem;
 }
 .quem-somos-container .quem-somos-card{
     display: flex;
+    position: relative;
     height: 100%;
-    max-width: 640px;
-    flex: 1;
+    flex: 0.75;
     align-items: flex-start;
     justify-content: center;
     -webkit-animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
@@ -27,11 +28,12 @@
 .quem-somos-container .quem-somos-card img{
   position: sticky;
   top: 25%;
+  margin-bottom: 20px;
     width: 90%;
+    max-width: 640px;
     filter: drop-shadow(0 0 0.75rem rgb(239, 181, 245));
 }
 .quem-somos-container .quem-somos-info{
-    max-width: 800px;
     font-size: 1.1rem;
     padding: 40px 20px;
     flex: 1;

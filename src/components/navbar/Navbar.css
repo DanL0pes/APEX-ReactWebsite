@@ -30,6 +30,7 @@
     display: flex;
     justify-content: space-between;
     flex: 0.4;
+    min-width: 540px;
     flex-direction: row;
     list-style-type: none
 }
@@ -45,7 +46,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-    .navbar{
+    .navbar:has(.nav-menu.active){
     background: rgba(255, 255, 255, 0.21);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);

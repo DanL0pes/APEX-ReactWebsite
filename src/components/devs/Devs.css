@@ -7,11 +7,48 @@
 
 .devs-container{
     flex: 1;
+    background-color: #193c99;
     display: flex;
-    background-color: rgb(173, 173, 173);
+    flex-direction: row;
 }
+.devs-container .left-side{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.devs-container .right-side{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+}
+.devs-container .right-side #blob{
+    position: absolute;
+}
+
+.devs-container .left-side h1 {
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #ffffff;
+    font-size: 12rem;
+    text-align: center;
+    color: transparent;
+    font-family: "Meta", sans-serif;
+    text-shadow: 10px 10px 0px #FF8BA0,
+      15px 15px 0px #ff045e,
+      20px 20px 0px #be0d73,
+      25px 25px 0px #a4007b,
+      45px 45px 10px #002894;
+    cursor: pointer;
+  }
+  
+  .devs-container .left-side h1:hover {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
+  }
+  
 .carousel-container{
-    width: 100vw;
+    width: 40vw;
 }
 .devs-card{
     user-select: none;
@@ -20,21 +57,40 @@
     padding: 24px;
     display: flex;
     flex-direction: column;
+    color: #000;
     align-items: center;
     margin-inline: 24px;
     overflow: hidden;
-    background-color: #FFF;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .devs-card #card-funcao{
     font-weight: 500;
-    color: #999;
+    color: #829bb9;
     font-size: 1rem;
 }
 .devs-card img{
     height: 162px;
-    border-radius: 50%;
+    border-radius: 12px;
+    border: 1px solid #E0E0E0 ;
     width: 162px;
     object-fit: cover;
     object-position: top;
+}
+.devs-card .links-dev{
+    display: flex;
+    gap: 5px;
+}
+.devs-card .links-dev a{
+    color: #000;
+    transition: .2s;
+}
+.devs-card .links-dev a:hover{
+    scale: 1.2;
+    color: #002894;
 }

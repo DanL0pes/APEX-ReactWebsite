@@ -1,7 +1,7 @@
 
 import "react-multi-carousel/lib/styles.css";
 import Carousel from 'react-multi-carousel';
-import { DiGithub } from 'react-icons/di';
+import { FaGithub } from "react-icons/fa";
 import { BsInstagram, BsLinkedin } from 'react-icons/bs';
 import { useState } from "react";
 
@@ -11,19 +11,19 @@ export function Carrosel() {
     superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 10
+        items: 4
     },
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 5
+        items: 3
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 4
+        items: 3
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 3
+        items: 2
     }
 };
 
@@ -39,7 +39,7 @@ const [developers, setDevelopers] = useState([
     {
         "id": 2,
         "nome": 'Daniel L.',
-        "funcao":'Dev Full',
+        "funcao":'Dev FullStack',
         "linkGit": '',
         "linkInsta": '',
         "linkLinkedIn": ''
@@ -109,9 +109,9 @@ const [developers, setDevelopers] = useState([
                     containerClass="carousel-container"
                     additionalTransfrom={0}
                     arrows
-                    autoPlaySpeed={3000}
+                    autoPlaySpeed={2000}
                     centerMode={false}
-                    className=""
+                    className="devs-carrosel"
                     dotListClass=""
                     draggable
                     focusOnSelect={false}
@@ -130,7 +130,8 @@ const [developers, setDevelopers] = useState([
                     showDots={false}
                     sliderClass=""
                     slidesToSlide={1}
-                    swipeable>
+                    swipeable
+                    autoPlay>
                         {developers.map(function(dev){
                             return (
                                 <div className='devs-card' key={dev.id}>
@@ -139,7 +140,7 @@ const [developers, setDevelopers] = useState([
                                     <p id="card-funcao">{dev.funcao}</p>
                                     <div className='links-dev'>
                                         <a href=''>
-                                            <DiGithub />
+                                            <FaGithub />
                                         </a>
                                         <a href=''>
                                             <BsInstagram />
