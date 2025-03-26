@@ -24,7 +24,7 @@ function MainSection() {
                 <div className='main-frase'>
                     <h1>Simplificando Processos, Ampliando Resultados</h1>
                     <p>Simplifique seus processos e amplie seus resultados com soluções tecnológicas da <span>Apex</span>. Nossa equipe desenvolve apps e sistemas para aumentar sua eficiência.</p>
-                    <a>{`Confira nossos Projetos`}</a>
+                    <a>Venha conhecer-nos</a>
                 </div>
                 <div className={`scrollUp ${scrolled ? 'scrolled' : ''}`}>
                     <FaAnglesUp />
