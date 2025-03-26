@@ -42,22 +42,22 @@ function Navbar() {
                     </li>
                     <li className='nav-item'>
                         <Link to='projetos' className='nav-links' smooth={true} onClick={closeMobileMenu}>
-                            Projetos
+                            Projeto
                         </Link>
                     </li>
                     <li className='nav-item'>
                         <Link to='devs' className='nav-links' smooth={true} onClick={closeMobileMenu}>
-                            Desenvolvedores
-                        </Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to='contato' className='nav-links' smooth={true} onClick={closeMobileMenu}>
-                            Contato
+                            Equipe
                         </Link>
                     </li>
                     <li className='nav-item'>
                         <Link to='parceiros' className='nav-links' smooth={true} onClick={closeMobileMenu}>
                             Parceiros
+                        </Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to='contato' className='nav-links' smooth={true} onClick={closeMobileMenu}>
+                            Contato
                         </Link>
                     </li>
                 </ul>

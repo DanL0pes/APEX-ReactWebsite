@@ -3,12 +3,14 @@
     width: 100%;
     position: fixed;
     transition: all .3s ease-in-out;
+    color: #555;
 }
 .navbar.scrolled{
-    background: rgba(255, 255, 255, 0.21);
+    background: rgba(255, 255, 255, 0.37);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    color: #000;
 }
 .navbar-container{
     display: flex;
@@ -35,14 +37,13 @@
     list-style-type: none
 }
 .nav-links{
-    color: #555;
     width: fit-content;
     text-decoration: none;
-    font-weight: 600;
     cursor: pointer;
 }
 .nav-item:hover .nav-links{
     color: #000;
+    font-weight: 500;
 }
 
 @media only screen and (max-width: 768px) {

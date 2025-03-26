@@ -8,8 +8,6 @@ function AmigoSangue() {
         <section className='amigo-sangue' id='projetos'>
 
             <div className='amigo-sangue-container'>
-
-                <h1 id='title'>Projetos</h1>
                 <div className='amigo-sangue-projeto'>
                 <div className='blob main'>
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">

@@ -34,7 +34,7 @@
     text-align: center;
     color: transparent;
     font-family: "Meta", sans-serif;
-    text-shadow: 10px 10px 0px #FF8BA0,
+    text-shadow: 10px 10px 0px #f16397,
       15px 15px 0px #ff045e,
       20px 20px 0px #be0d73,
       25px 25px 0px #a4007b,
@@ -81,6 +81,7 @@
     width: 162px;
     object-fit: cover;
     object-position: top;
+    pointer-events: none;
 }
 .devs-card .links-dev{
     display: flex;
