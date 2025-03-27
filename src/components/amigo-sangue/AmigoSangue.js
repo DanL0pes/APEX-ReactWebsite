@@ -42,7 +42,7 @@ function AmigoSangue() {
                 <div className='amigo-sangue-card'>
                 <div className='amigo-sangue-info'>
                     <div>
-                    <h2>Amigo de Sangue</h2>
+                    <h1>Amigo de Sangue</h1>
                     <p>Site aliado a um aplicativo como uma forma de conectar de forma mais simples e acessível os doadores!</p>
                     </div>
                     <ul>
